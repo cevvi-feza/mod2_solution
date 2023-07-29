@@ -1,0 +1,31 @@
+/* Common styles for all views */
+body {
+  font-family: Arial, sans-serif; /* Optionally set a font-family */
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+  .section {
+    width: 33.33%; /* Each section takes up equal space */
+    float: left;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 50%; /* Two sections side by side */
+    float: left;
+  }
+  .section:nth-child(3) {
+    width: 100%; /* Third section takes up entire row */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .section {
+    width: 100%; /* Each section takes up the entire row */
+    float: none;
+  }
+}
